@@ -8,8 +8,6 @@ struct node {
 
 struct node *head = NULL;
 struct node *head1 = NULL;
-
-/* Create nodes for first list */
 void createnode1() {
     struct node *newnode, *temp;
 
@@ -27,8 +25,6 @@ void createnode1() {
         temp->next = newnode;
     }
 }
-
-/* Create nodes for second list */
 void createnode2() {
     int ch;
     struct node *temp = NULL;
@@ -53,8 +49,6 @@ void createnode2() {
 
     } while (ch != 2);
 }
-
-/* Sort the first list */
 void sortList() {
     int tempdata;
     struct node *i, *j;
@@ -69,8 +63,6 @@ void sortList() {
         }
     }
 }
-
-/* Reverse the first list */
 void reverseList() {
     struct node *prev = NULL, *next = NULL, *curr = head;
 
@@ -82,8 +74,6 @@ void reverseList() {
     }
     head = prev;
 }
-
-/* Concatenate two lists */
 struct node *concatList(struct node *head3, struct node *head2) {
     struct node *temp = head3;
 
@@ -96,8 +86,6 @@ struct node *concatList(struct node *head3, struct node *head2) {
     temp->next = head2;
     return head3;
 }
-
-/* Display list */
 void displaylist(struct node *head2) {
     struct node *temp = head2;
 
